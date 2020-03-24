@@ -166,9 +166,9 @@ def parse_good(goodid):
 
 def get_all_pages(start_url):
     """
-    获取每一页的url
-    :param start_url: 搜索结果页面 一般来说有很多页
-    :return: 返回一个list 里面是搜索结果所有页码的url
+    To get the url of each page的url
+    :param start_url: the web page of the search result, usually there are lots of pages
+    :return: a list consists of all the urls of every page of the search result
     """
     browser2 = webdriver.Chrome(executable_path="C:/Users/JackyBreak/Downloads/chromedriver_win32/chromedriver.exe",
                                 chrome_options=chrome_options)
@@ -184,9 +184,9 @@ def get_all_pages(start_url):
 
 def get_good_ids(curr_page_url):
     """
-    过去当前页面所有产品的good id
-    :param curr_page_url: 当前页面url
-    :return: 使用parse_good解析每个good_id
+    all the product(good) ids of current page
+    :param curr_page_url: url of the current page
+    :return: it uses parse_good to parse each product
     """
     # print("processing page: {}".format(page))
     browser3 = webdriver.Chrome(executable_path="/chromedriver.exe",
