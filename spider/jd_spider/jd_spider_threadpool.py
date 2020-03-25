@@ -4,14 +4,14 @@ import json
 import time
 import re
 from datetime import datetime
-from jd_spider.models import *
+from models import *
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 good_id_list = []
 chrome_options = Options()
-chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("blink-settings=imagesEnabled=false")
 
@@ -63,7 +63,7 @@ def parse_good(goodid):
 
     comment_btn = browser.find_element_by_xpath("//li[@clstag='shangpin|keycount|product|shangpinpingjia_1']")
     comment_btn.click()
-    time.sleep(5)
+    time.sleep(3)
     sel = Selector(text=browser.page_source)
     tag_list = sel.xpath("//div[@class='tag-list tag-available']/span/text()").extract()
     good_rate_ratio = int(sel.xpath("//div[@class='percent-con']/text()").extract()[0])
@@ -158,7 +158,7 @@ def parse_good(goodid):
         try:
             next_page_ele = browser.find_element_by_xpath("//a[@clstag='shangpin|keycount|product|pinglunfanye-nextpage']")
             next_page_ele.send_keys("\n")
-            time.sleep(5)
+            time.sleep(3)
             sel = Selector(text=browser.page_source)
         except NoSuchElementException as e:
             has_next_page = False
@@ -170,7 +170,7 @@ def get_all_pages(start_url):
     :param start_url: the web page of the search result, usually there are lots of pages
     :return: a list consists of all the urls of every page of the search result
     """
-    browser2 = webdriver.Chrome(executable_path="C:/Users/JackyBreak/Downloads/chromedriver_win32/chromedriver.exe",
+    browser2 = webdriver.Chrome(executable_path="D:\PycharmProj\PythonWebCrawlerPersonal\spider\chromedriver.exe",
                                 chrome_options=chrome_options)
     browser2.get(start_url)
     sel = Selector(text=browser2.page_source)
@@ -189,7 +189,7 @@ def get_good_ids(curr_page_url):
     :return: it uses parse_good to parse each product
     """
     # print("processing page: {}".format(page))
-    browser3 = webdriver.Chrome(executable_path="/chromedriver.exe",
+    browser3 = webdriver.Chrome(executable_path="D:\PycharmProj\PythonWebCrawlerPersonal\spider\chromedriver.exe",
                                 chrome_options=chrome_options)
     browser3.get(curr_page_url)
     sel = Selector(text=browser3.page_source)
@@ -202,13 +202,11 @@ def get_good_ids(curr_page_url):
 
 
 if __name__ == "__main__":
-    stop = False
-    executor = ThreadPoolExecutor(max_workers=15)
+    executor = ThreadPoolExecutor(max_workers=8)
     all_pages = get_all_pages("https://list.jd.com/list.html?cat=9987,653,655") #返回一个list 里面是所有页码的url
     for page in all_pages:
         executor.submit(get_good_ids, page) #针对于每一页的url 使用get_good_id
-    while not stop:
-        time.sleep(1)
+        time.sleep(10)
 
 
 

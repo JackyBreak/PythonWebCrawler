@@ -9,10 +9,6 @@ class BaseModel(Model):
         database = db
 
 
-class Item_ids(BaseModel):
-    item_id = CharField(max_length=500, verbose_name="商品id")
-
-
 class Good(BaseModel):
     id = IntegerField(primary_key=True, verbose_name="商品id")
     name = CharField(max_length=500, verbose_name="商品名称")
