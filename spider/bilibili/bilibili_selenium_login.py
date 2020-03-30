@@ -34,8 +34,8 @@ def crop_image(image_file_name, image_div):
 
 def login():
 
-    username = "17710911282"
-    password = "WOSHISHEI?zj"
+    username = "username"
+    password = "password"
     browser.get(url)
     browser.maximize_window()
     username_input = browser.find_element_by_xpath("//input[@id='login-username']")
