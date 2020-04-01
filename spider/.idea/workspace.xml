@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="204b91ae-368b-489a-9d95-40b603e31f8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bilibili/bilibili_selenium_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili/bilibili_selenium_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jd_spider/jd_spider_threadpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd_spider/jd_spider_threadpool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jd_spider/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd_spider/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1XaJ2XmPxItF6JeGfp5v4ijMMPw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,9 +38,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Python.jd_spider_threadpool">
+  <component name="RunManager" selected="Python.bilibili_selenium_login">
+    <configuration name="bilibili_selenium_login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bilibili" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bilibili/bilibili_selenium_login.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="jd_spider_threadpool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,28 +129,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="spider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jd_spider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jd_spider/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="threadpool_spider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bilibili_selenium_login" />
         <item itemvalue="Python.jd_spider_threadpool" />
         <item itemvalue="Python.models" />
         <item itemvalue="Python.threadpool_spider" />
         <item itemvalue="Python.models (1)" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +199,12 @@
       <workItem from="1584833229907" duration="655000" />
       <workItem from="1585072026515" duration="993000" />
       <workItem from="1585158203032" duration="1404000" />
+      <workItem from="1585251211487" duration="554000" />
+      <workItem from="1585415557663" duration="10632000" />
+      <workItem from="1585753140108" duration="729000" />
+      <workItem from="1585754094890" duration="88000" />
+      <workItem from="1585754192894" duration="139000" />
+      <workItem from="1585754340841" duration="269000" />
     </task>
     <servers />
   </component>
@@ -216,38 +224,50 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="524" y="141" key="#xdebugger.evaluate/0.0.1536.864@0.0.1536.864" timestamp="1581132924763" />
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1585159663045">
+    <state x="549" y="190" key="FileChooserDialogImpl" timestamp="1585754092311">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585159663045" />
-    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1585159663045">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="549" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585754092311" />
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1585431013469">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585159663045" />
-    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1585159663045">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1062" height="178" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585424066063" />
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585431013469" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1585431013468">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585159663045" />
-    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1585159663045">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1062" height="178" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585424066063" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585431013468" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1585431013468">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585159663045" />
-    <state width="1493" height="207" key="GridCell.Tab.1.bottom" timestamp="1585159663045">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1062" height="178" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585424066063" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585431013468" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1585431013468">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585159663045" />
-    <state width="1493" height="207" key="GridCell.Tab.1.center" timestamp="1585159663045">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1062" height="178" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585424066063" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585431013468" />
+    <state width="1877" height="272" key="GridCell.Tab.1.bottom" timestamp="1585431013469">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1585159663045" />
-    <state width="1493" height="207" key="GridCell.Tab.1.left" timestamp="1585159663045">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1062" height="187" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585423391942" />
+    <state width="1877" height="272" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585431013469" />
+    <state width="1877" height="272" key="GridCell.Tab.1.center" timestamp="1585431013469">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1585159663045" />
-    <state width="1493" height="207" key="GridCell.Tab.1.right" timestamp="1585159663045">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1062" height="187" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1585423391942" />
+    <state width="1877" height="272" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585431013469" />
+    <state width="1877" height="272" key="GridCell.Tab.1.left" timestamp="1585431013469">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1493" height="207" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1585159663045" />
+    <state width="1062" height="187" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1585423391942" />
+    <state width="1877" height="272" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585431013469" />
+    <state width="1877" height="272" key="GridCell.Tab.1.right" timestamp="1585431013469">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1062" height="187" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1585423391942" />
+    <state width="1877" height="272" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585431013469" />
     <state width="1493" height="276" key="GridCell.Tab.2.bottom" timestamp="1581134529823">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -264,6 +284,11 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="276" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1581134529823" />
+    <state x="370" y="148" key="SettingsEditor" timestamp="1585754180716">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="370" y="148" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1585754180716" />
+    <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1585429053848" />
     <state width="775" height="439" key="XDebugger.FullValuePopup" timestamp="1584819481181">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -326,6 +351,7 @@
     <SUITE FILE_PATH="coverage/spider$bs_test.coverage" NAME="bs_test Coverage Results" MODIFIED="1581363007259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider_start" />
     <SUITE FILE_PATH="coverage/spider$peewee_test.coverage" NAME="peewee_test Coverage Results" MODIFIED="1581468242482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csdn_spider" />
     <SUITE FILE_PATH="coverage/spider$threading_spider_queue.coverage" NAME="threading_spider_queue Coverage Results" MODIFIED="1584296111300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/threading_spider" />
+    <SUITE FILE_PATH="coverage/spider$bilibili_selenium_login.coverage" NAME="bilibili_selenium_login Coverage Results" MODIFIED="1585430571202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bilibili" />
     <SUITE FILE_PATH="coverage/spider$spider.coverage" NAME="spider Coverage Results" MODIFIED="1584220466345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/csdn_spider" />
     <SUITE FILE_PATH="coverage/spider$threading_spider.coverage" NAME="threading_spider Coverage Results" MODIFIED="1584223323856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/threading_spider" />
     <SUITE FILE_PATH="coverage/spider$request_test.coverage" NAME="request_test Coverage Results" MODIFIED="1581281754383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider_start" />
