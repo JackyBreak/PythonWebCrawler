@@ -6,7 +6,7 @@ from urllib import parse
 from scrapy import Selector
 from datetime import datetime
 
-from csdn_spider.models import *
+from spider.csdn_spider.models import *
 
 domain = "https://bbs.csdn.net/forums"
 def get_nodes_json():

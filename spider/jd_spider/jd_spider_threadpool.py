@@ -4,10 +4,11 @@ import json
 import time
 import re
 from datetime import datetime
-from models import *
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+from spider.jd_spider.models import *
 
 good_id_list = []
 chrome_options = Options()
@@ -31,6 +32,7 @@ def process_value(num_str):
 
 
 def parse_good(goodid):
+    print("processing good: https://item.jd.com/{}.html".format(goodid))
     browser = webdriver.Chrome(executable_path="D:\PycharmProj\PythonWebCrawlerPersonal\spider\chromedriver.exe", #replace it with the path of chrome webdriver in your local repo
                                chrome_options=chrome_options)
     browser.get("https://item.jd.com/{}.html".format(goodid))
@@ -162,6 +164,7 @@ def parse_good(goodid):
             sel = Selector(text=browser.page_source)
         except NoSuchElementException as e:
             has_next_page = False
+    browser.close()
 
 
 def get_all_pages(start_url):
@@ -179,6 +182,7 @@ def get_all_pages(start_url):
     for i in range(1, 10): #暂时先测试前9页
         new_page = "{}&page={}".format(start_url, i)
         pages.append(new_page)
+    browser2.close()
     return pages
 
 
@@ -196,16 +200,16 @@ def get_good_ids(curr_page_url):
     all_ids_part1 = sel.xpath("//div[@class='gl-i-wrap j-sku-item']/@data-sku").extract()
     all_ids_part2 = sel.xpath("//div[@class='gl-i-wrap j-sku-item ']/@data-sku").extract()
     all_ids = all_ids_part1 + all_ids_part2
-    for curr_id in all_ids:
-        print("processing good: https://item.jd.com/{}.html".format(curr_id))
-        executor.submit(parse_good, curr_id)
+    browser3.close()
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        for curr_id in all_ids:
+            executor.submit(parse_good, curr_id)
+
 
 
 if __name__ == "__main__":
-    executor = ThreadPoolExecutor(max_workers=8)
     all_pages = get_all_pages("https://list.jd.com/list.html?cat=9987,653,655") #返回一个list 里面是所有页码的url
     for page in all_pages:
-        executor.submit(get_good_ids, page) #针对于每一页的url 使用get_good_id
-        time.sleep(10)
+       get_good_ids(page) #针对于每一页的url 使用get_good_id
 
 

@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -205,6 +205,10 @@
       <workItem from="1585754094890" duration="88000" />
       <workItem from="1585754192894" duration="139000" />
       <workItem from="1585754340841" duration="269000" />
+      <workItem from="1585754620968" duration="319000" />
+      <workItem from="1585754950558" duration="34000" />
+      <workItem from="1585755024888" duration="165000" />
+      <workItem from="1585755560251" duration="18000" />
     </task>
     <servers />
   </component>
@@ -224,10 +228,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="524" y="141" key="#xdebugger.evaluate/0.0.1536.864@0.0.1536.864" timestamp="1581132924763" />
-    <state x="549" y="190" key="FileChooserDialogImpl" timestamp="1585754092311">
+    <state x="549" y="190" key="FileChooserDialogImpl" timestamp="1585755576494">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585754092311" />
+    <state x="549" y="190" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585755576494" />
     <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1585431013469">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -284,15 +288,19 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="276" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1581134529823" />
-    <state x="370" y="148" key="SettingsEditor" timestamp="1585754180716">
+    <state x="370" y="148" key="SettingsEditor" timestamp="1585755188569">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="370" y="148" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1585754180716" />
+    <state x="370" y="148" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1585755188569" />
     <state x="463" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1585429053848" />
     <state width="775" height="439" key="XDebugger.FullValuePopup" timestamp="1584819481181">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="775" height="439" key="XDebugger.FullValuePopup/0.0.1536.864@0.0.1536.864" timestamp="1584819481181" />
+    <state x="477" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1585755027711">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="477" y="259" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585755027711" />
     <state x="762" y="0" width="781" height="870" maximized="true" key="dock-window-1" timestamp="1581627328680">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
